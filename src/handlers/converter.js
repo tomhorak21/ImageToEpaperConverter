@@ -14,8 +14,8 @@ async function convert(options = {}) {
 		targetFolder = optionsUtils.get(options, optionsUtils.OPTION_KEYS.TARGET_FOLDER),
 		targetFilename = optionsUtils.get(options, optionsUtils.OPTION_KEYS.TARGET_TEXT_FILENAME),
 		targetCppFilename = optionsUtils.get(options, optionsUtils.OPTION_KEYS.TARGET_CPP_FILENAME),
-		returnArray = optionsUtils.get(options, optionsUtils.OPTION_KEYS.RETURN_ARRAY, false);
-		readFromFile = optionsUtils.get(optionsUtils, optionsUtils.READ_FROM_FILE, true);
+		returnArray = optionsUtils.get(options, optionsUtils.OPTION_KEYS.RETURN_ARRAY, false),
+		readFromFile = optionsUtils.get(options, optionsUtils.OPTION_KEYS.READ_FROM_FILE, true);
 
 
 	try {

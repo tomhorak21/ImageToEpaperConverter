@@ -47,7 +47,7 @@ function get(options, key, defaultValue) {
 	}
 
 	if (key.indexOf('.') === -1) {
-		return options[key] || defaultValue;
+		return options[key] !== undefined ? options[key] : defaultValue;
 	}
 
 	let keyParts = key.split('.');
